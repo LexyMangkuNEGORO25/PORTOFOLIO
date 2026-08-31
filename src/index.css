@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #111114;
+  --color-muted: #767673;
+  --color-subtle: #e8e8e5;
+  --color-accent: #aeb8b0;
+  --color-base: #f4f4f1;
+  --color-surface: #ffffff;
+  --color-line: #e2e2df;
+  --color-dim: rgba(17, 17, 20, 0.45);
+  --color-dark: #151517;
+  --color-dark-subtle: #1f2123;
+  --color-dark-line: rgba(255, 255, 255, 0.1);
+  --color-dark-dim: rgba(255, 255, 255, 0.45);
+  --color-card: #1d1e20;
+  --color-card-foreground: #f4f4f1;
+
+  --font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: var(--color-base);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  section[id] {
+    scroll-margin-top: 70px;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-base);
+  }
+}
+
+/* ===== Lenis ===== */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+/* ===== Marquee ===== */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+.marquee-track:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* ===== Typing cursor ===== */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.text-type-cursor {
+  animation: blink 0.7s step-end infinite;
+}
+
+/* ===== Scroll indicator bounce ===== */
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.animate-scroll-bounce {
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+/* ===== Dot pattern ===== */
+.dot-pattern {
+  background-image: radial-gradient(circle, var(--color-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ===== Swiper overrides ===== */
+.swiper-pagination-bullet {
+  background: var(--color-muted) !important;
+  opacity: 0.3 !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-ink) !important;
+  opacity: 1 !important;
+}
+
+/* ===== Experience/Project card number counter ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}

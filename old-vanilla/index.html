@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Pratama | Web Developer</title>
+  <meta name="description" content="Portofolio pribadi Ali Pratama - Web Developer yang berfokus pada pengembangan web modern.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Ali<span class="logo-dot">Pratama</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Ali Pratama</h1>
+        <h2 class="hero-role">Front-End Web Developer</h2>
+        <p class="hero-desc">
+          Saya seorang <strong>front-end developer</strong> yang bersemangat
+          mengubah ide menjadi website yang cepat, responsif, dan mudah digunakan.
+          Berfokus pada <strong>UI/UX</strong> dan performa.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+        <div class="hero-social">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/profile.jpg" alt="Foto Profil" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x400?text=Foto+Profil'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG SAYA ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="section-divider"></div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Mari berkenalan 👋</h3>
+          <p>
+            Halo! Saya <strong>Ali Pratama</strong>, seorang front-end developer
+            yang berfokus pada pengembangan web modern. Saya suka menuangkan ide
+            menjadi produk digital yang bermanfaat, bersih, dan mudah digunakan.
+          </p>
+          <p>
+            Dengan latar belakang informatika dan pengalaman membangun berbagai
+            proyek, saya terbiasa bekerja mulai dari desain UI/UX, pengembangan
+            front-end, hingga deployment. Saya pegang nilai <em>detail matters</em>
+            dan selalu belajar teknologi baru untuk memberikan hasil terbaik.
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-item"><span>Nama:</span> Ali Pratama</div>
+          <div class="info-item"><span>Peran:</span> Front-End Developer</div>
+          <div class="info-item"><span>Domisili:</span> Bandung, Indonesia</div>
+          <div class="info-item"><span>Email:</span> alipratama@email.com</div>
+          <div class="info-item"><span>Status:</span> Terbuka untuk kolaborasi</div>
+          <div class="info-item"><span>Bahasa:</span> Indonesia, Inggris</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEAHLIAN ===== -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Keahlian Saya</h2>
+      <div class="section-divider"></div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML</h3>
+          <p>Struktur halaman web yang semantik</p>
+          <div class="progress"><div class="progress-bar" data-progress="90">90%</div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS</h3>
+          <p>Desain modern & responsif</p>
+          <div class="progress"><div class="progress-bar" data-progress="85">85%</div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+          <h3>JavaScript</h3>
+          <p>Interaksi dinamis di browser</p>
+          <div class="progress"><div class="progress-bar" data-progress="80">80%</div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h3>React</h3>
+          <p>Aplikasi front-end berbasis komponen</p>
+          <div class="progress"><div class="progress-bar" data-progress="75">75%</div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+          <h3>Node.js</h3>
+          <p>Back-end & API server</p>
+          <div class="progress"><div class="progress-bar" data-progress="70">70%</div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>Database</h3>
+          <p>MySQL & MongoDB</p>
+          <div class="progress"><div class="progress-bar" data-progress="65">65%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYEK ===== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Proyek Saya</h2>
+      <div class="section-divider"></div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/4f46e5/ffffff?text=E-Commerce+Kopi" alt="Proyek E-Commerce Kopi">
+          </div>
+          <div class="project-body">
+            <h3>E-Commerce Coffee Shop</h3>
+            <p>Toko online penjualan kopi lokal dengan keranjang belanja, filter produk, dan integrasi payment gateway.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Demo <i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-small btn-ghost">Repo <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/ec4899/ffffff?text=Dashboard+Analitik" alt="Proyek Dashboard Analitik">
+          </div>
+          <div class="project-body">
+            <h3>Dashboard Analitik</h3>
+            <p>Dashboard visualisasi data real-time dengan chart interaktif, filter rentang waktu, dan mode gelap.</p>
+            <div class="project-tags">
+              <span>React</span><span>Tailwind CSS</span><span>Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Demo <i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-small btn-ghost">Repo <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/10b981/ffffff?text=API+Tugas" alt="Proyek API Manajemen Tugas">
+          </div>
+          <div class="project-body">
+            <h3>API Manajemen Tugas</h3>
+            <p>REST API untuk aplikasi todo dengan autentikasi JWT, CRUD lengkap, dan dokumentasi Swagger.</p>
+            <div class="project-tags">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Demo <i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-small btn-ghost">Repo <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/f59e0b/ffffff?text=Aplikasi+Cuaca" alt="Proyek Aplikasi Cuaca">
+          </div>
+          <div class="project-body">
+            <h3>Aplikasi Cuaca Sederhana</h3>
+            <p>Aplikasi pencari informasi cuaca berdasarkan kota, memanfaatkan API publik OpenWeatherMap.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>REST API</span><span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Demo <i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-small btn-ghost">Repo <i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PENGALAMAN ===== -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Pengalaman & Pendidikan</h2>
+      <div class="section-divider"></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Front-End Developer</h3>
+            <span class="timeline-place">PT Nusantara Digital</span>
+            <span class="timeline-date">2023 - Sekarang</span>
+            <p>Mengembangkan dan memelihara aplikasi web menggunakan React dan Tailwind CSS. Bekerja dalam tim agile, meningkatkan performa hingga 40%, dan menerapkan desain responsif.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Freelance Web Developer</h3>
+            <span class="timeline-place">Mandiri</span>
+            <span class="timeline-date">2021 - 2023</span>
+            <p>Merancang dan membangun website untuk lebih dari 10 klien, termasuk landing page, company profile, dan toko online dengan HTML, CSS, dan JavaScript.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>S1 Teknik Informatika</h3>
+            <span class="timeline-place">Institut Teknologi Bandung</span>
+            <span class="timeline-date">2017 - 2021</span>
+            <p>Lulus dengan predikat cum laude (IPK 3.72). Fokus pada rekayasa perangkat lunak dan pemrograman web. Aktif sebagai ketua divisi IT di himpunan mahasiswa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <div class="section-divider"></div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div><h4>Email</h4><p>alipratama@email.com</p></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div><h4>Telepon / WA</h4><p>+62 812-3456-7890</p></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><h4>Alamat</h4><p>Bandung, Indonesia</p></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Nama Lengkap" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Anda" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subjek">
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Pesan Anda..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; <span id="year"></span> Ali Pratama. Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
